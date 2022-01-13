@@ -27,8 +27,9 @@ public class MemberController {
 	}
 	@PostMapping("addMember")
 	public String postAddMember(HttpServletRequest request, RedirectAttributes redirect,Member member) {
-		System.out.println("MemberController()_POSTaddMember 실행");
+		System.out.println("MemberController()_POSTaddMember 실행"+member);
 		log.debug("addMember_>>>>>>>>>>>>>>>>>>"+member.toString());
+		
 		memberService.addMember(member);
 		return"/login";
 	}

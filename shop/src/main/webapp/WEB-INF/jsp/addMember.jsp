@@ -80,23 +80,23 @@
 		<form name="AddMember" action="${pageContext.request.contextPath}/addMember" method="post">
 		<div class="form-group"> 
             <label for="id">member ID</label>
-            <input type="text" class="form-control" id="id" name="memberId" placeholder="ID입력 *" style="width: 30%">
+            <input type="text" class="form-control" id="memberId" name="memberId" placeholder="ID입력 *" style="width: 30%">
         </div>
      	<div class="form-group"> 
             <label for="pw">member Pw</label>
-            <input type="password" class="form-control" id="pw" name="memberPw" placeholder="PW입력 *" style="width: 30%">
+            <input type="password" class="form-control" id="memberPw" name="memberPw" placeholder="PW입력 *" style="width: 30%">
         </div>
   		<div class="form-group"> 
             <label for="name">이름</label>
-            <input type="text" class="form-control" id="name" name="memberName" placeholder="이름입력 *" style="width: 30%">
+            <input type="text" class="form-control" id="memberName" name="memberName" placeholder="이름입력 *" style="width: 30%">
         </div>
       	<div class="form-group"> 
             <label for="age">나이</label>
-            <input type="number" class="form-control" id="age" name="memberAge" placeholder="나이입력 *" style="width: 30%">
+            <input type="number" class="form-control" id="memberAge" name="memberAge" placeholder="나이입력 *" style="width: 30%">
         </div>
       	<div class="form-group"> 
             <label for="gender">성별</label>
-            <select style=" height: 30px; text-align:left;" name="gender" id="memberGender">
+            <select style=" height: 30px; text-align:left;" name="memberGender" id="memberGender">
             <option value="남">남</option>
             <option value="여">여</option>
           	</select>
@@ -130,19 +130,19 @@
 	<script>
     // 유효성 검사
     function addMember(){		
-		if($("#id").val() == ""){
+		if($("#memberId").val() == ""){
 			alert('아이디를 입력해주세요.');
 			return;
-		} else if($("#pw").val() == ""){
+		} else if($("#memberPw").val() == ""){
 			alert('비밀번호를 입력해주세요.');
 			return;
-		} else if($("#name").val() == ""){
+		} else if($("#memberName").val() == ""){
 			alert('이름을 입력해주세요.');
 			return;
-		} else if($("#age").val() == ""){
+		} else if($("#memberAge").val() == ""){
 			alert('나이를 입력해주세요.');
 			return;
-		} else if($("#gender").val() == ""){
+		} else if($("#memberGender").val() == ""){
 			alert('성별을 선택하세요.');
 			return;
 		} else {
